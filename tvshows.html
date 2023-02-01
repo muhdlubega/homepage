@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content = "initial-scale = 1, width = device+width">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>TV Shows</title>
+    </head>
+    <body>
+      <!--use navbar feature from bootstrap to make all pages navigable-->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="index.html">My Webpage</a>
+              <a class="nav-link" href="drawings.html">Drawings</a>
+              <a class="nav-link" href="tvshows.html">Binge-Watching</a>
+              <a class="nav-link" href="sports.html">Sports</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!--use css settings to make an appealing header with interactive buttons using javascript-->
+      <div class="header">
+            <h1 class="banner">BINGE-WATCHING</h1>
+            <br><br>
+            <button class="colour" id="red">3</button>
+            <button class="colour" id="green">2</button>
+            <button class="colour" id="blue">1</button>
+      </div>
+      <!--carousel function from bootstrap used to showcase the images for the shows taken from the sources-->
+        <p class="p1">When I feel lazy to work on something or move in general I would spend my time on bingeing shows. I've spent a copious amount of lifetime on marathoning shows and/or movies, which to me is time well spent.</p>
+        <p class="p1">Here are some of my favourite picks:</p>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://flxt.tmsimg.com/assets/p10492751_b_h8_al.jpg" class="d-block w-100" alt="Better Call Saul">
+              </div>
+              <div class="carousel-item">
+                <img src="http://popscoped.com/wp-content/uploads/2022/04/lopp.jpg" class="d-block w-100" alt="The Office">
+              </div>
+              <div class="carousel-item">
+                <img src="https://images.everyeye.it/img-articoli/game-of-thrones-10-anni-dopo-storia-leggenda-speciale-v4-52733-1280x16.webp" class="d-block w-100" alt="Game of Thrones">
+              </div>
+              <div class="carousel-item">
+                <img src="https://i.ytimg.com/vi/DJb8zxgktz8/maxresdefault.jpg" class="d-block w-100" alt="The Get Down">
+              </div>
+              <div class="carousel-item">
+                <img src="https://bleedingcool.com/wp-content/uploads/2018/10/The-Haunting-of-Hill-House-Poster-Art-1200x628.jpg" class="d-block w-100" alt="The Haunting of Hill House">
+              </div>
+              <div class="carousel-item">
+                <img src="https://material.asset.catchplay.com/BBF-TW-D0074-04/artworks/posters/BBF-TW-D0074-04-P1200.jpg?hash=1664307666" class="d-block w-100" alt="Sherlock">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <br>
+          <br>
+          <br>
+          <!--add button to return to top of page to ease navigation-->
+          <button onclick="topFunction()" id="myBtn" title="Go to top" class="colour">Return to Top</button>
+
+
+              <!--use javascript to make the buttons in the header interactive-->
+              <script>
+                // set buttons to change background colour on click
+                let body= document.querySelector('body');
+                document.querySelector('#red').addEventListener('click', function(){
+                    body.style.backgroundColor = '#212529';
+                });
+                document.querySelector('#green').addEventListener('click', function(){
+                    body.style.backgroundColor = '#DF20BF';
+                });
+                document.querySelector('#blue').addEventListener('click', function(){
+                    body.style.backgroundColor = '#5F0D9E';
+                });
+
+                // set button to scroll page to top on click
+                let mybutton = document.getElementById("myBtn");
+                window.onscroll = function() {scrollFunction()};
+                function scrollFunction() {
+                  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                  } else {
+                    mybutton.style.display = "none";
+                  }
+                }
+                function topFunction() {
+                  document.body.scrollTop = 0;
+                  document.documentElement.scrollTop = 0;
+                }
+              </script>
+      </body>
+</html>

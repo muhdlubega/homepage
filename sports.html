@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content = "initial-scale = 1, width = device+width">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>Sports</title>
+    </head>
+    <body>
+      <!--use navbar feature from bootstrap to make all pages navigable-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="index.html">My Webpage</a>
+                  <a class="nav-link" href="drawings.html">Drawings</a>
+                  <a class="nav-link" href="tvshows.html">Binge-Watching</a>
+                  <a class="nav-link" href="sports.html">Sports</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+        <!--use css settings to make an appealing header with interactive buttons using javascript-->
+        <div class = "container-fluid"></div>
+        <div class="header">
+            <h1 class="banner">SPORTS</h1>
+            <br><br>
+            <button class="colour" id="red">3</button>
+            <button class="colour" id="green">2</button>
+            <button class="colour" id="blue">1</button>
+        </div>
+        <!--add text and images in a simple and readable fashion-->
+        <p class="p1">Sports is one of my favourite freetime activity. I'm always trying out new sports and activities but out of all of them some of my favourites are:</p>
+        <img alt="Ultimate Frisbee" src="https://i.ytimg.com/vi/aNCuZJe1zQk/maxresdefault.jpg" class="photo2 img-fluid">
+                <br>
+                <h1 class="topic">Ultimate Frisbee</h1>
+                <p class="p1">Ultimate, originally known as ultimate Frisbee, is a non-contact team activity played by players with a frisbee, flung by hand. A point is scored when one team catches the disc in the opposing team's end zone. All youth and most club ultimate games are self-officiated through the "spirit of the game", often abbreviated SOTG. Spirit of the game is described by WFDF as an expectation that each player will be a good sport and play fair, as well as having high values of integrity; including "following and enforcing the rules".</p>
+                <br>
+        <img alt="Badminton" src="https://news.cgtn.com/news/2021-05-23/Reform-of-badminton-scoring-system-fails-to-pass-in-BWF-10vjMSvDOUM/img/13facbf2b5f247d9824df627f85afd0e/13facbf2b5f247d9824df627f85afd0e.jpeg" class="photo2 img-fluid">
+                <br>
+                <h1 class="topic">Badminton</h1>
+                <p class="p1">Badminton is a racquet sport played using racquets to hit a shuttlecock across a net. Points are scored by striking the shuttlecock with the racquet and landing it within the opposing side's half of the court. Each side may only strike the shuttlecock once before it passes over the net. Play ends once the shuttlecock has struck the floor or if a fault has been called by the umpire, service judge, or (in their absence) the opposing side.</p>
+                <br>
+        <img alt="Volleyball" src="https://img.olympicchannel.com/images/image/private/t_16-9_3200/v1536936974/primary/exvzqcvorticinejmmel" class="photo2 img-fluid">
+                <br>
+                <h1 class="topic">Volleyball</h1>
+                <p class="p1">Volleyball is a team sport in which two teams of six players are separated by a net. Each team tries to score points by grounding a ball on the other team's court under organized rules. A player on one of the teams begins a 'rally' by serving the ball (tossing or releasing it and then hitting it with a hand or arm), from behind the back boundary line of the court, over the net, and into the receiving team's court. The receiving team must not let the ball be grounded within their court. The team may touch the ball up to three times to return the ball to the other side of the court, but individual players may not touch the ball twice consecutively.</p>
+                <br>
+                <br>
+                <br>
+                <!--add button to return to top of page to ease navigation-->
+                <button onclick="topFunction()" id="myBtn" title="Go to top" class="colour">Return to Top</button>
+
+              <!--use javascript to make the buttons in the header interactive-->
+              <script>
+                // set buttons to change background colour on click
+                let body= document.querySelector('body');
+                document.querySelector('#red').addEventListener('click', function(){
+                    body.style.backgroundColor = '#212529';
+                });
+                document.querySelector('#green').addEventListener('click', function(){
+                    body.style.backgroundColor = '#DF20BF';
+                });
+                document.querySelector('#blue').addEventListener('click', function(){
+                    body.style.backgroundColor = '#5F0D9E';
+                });
+
+                // set button to scroll page to top on click
+                let mybutton = document.getElementById("myBtn");
+                window.onscroll = function() {scrollFunction()};
+                function scrollFunction() {
+                  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                  } else {
+                    mybutton.style.display = "none";
+                  }
+                }
+                function topFunction() {
+                  document.body.scrollTop = 0;
+                  document.documentElement.scrollTop = 0;
+                }
+              </script>
+      </body>
+</html>

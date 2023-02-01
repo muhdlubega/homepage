@@ -1,0 +1,104 @@
+/* set colour of default background and text to be more striking*/
+body{
+    background-color: #212529;
+    color: #ffff;
+}
+
+.header{
+    margin: auto;
+    height: 300px;
+    /* set gif as header background for better style*/
+    background:url("https://steamuserimages-a.akamaihd.net/ugc/2438013375536940927/D370DBF7BFC83ED36F783F08A598FFF3E71A1D61/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false");
+}
+
+/* set appearance of colour buttons to not look too "default"*/
+.colour{
+    margin-right: 30px;
+    margin-bottom: 30px;
+    padding: 10px;
+    padding-left:15px;
+    padding-right:15px;
+    border-radius: 8px;
+    background-color: #DF20BF;
+    border: none;
+    font-family: "Arial";
+    font-weight: bold;
+    float: right;
+}
+
+/* set the configurations of text to be readable and not too clunky */
+.p1{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    font-family: "Arial";
+    font-weight: bold;
+    padding: 10px;
+    padding-top: 30px;
+}
+
+.p2{
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: right;
+    font-family: "Arial";
+    font-weight: bold;
+    padding: 20px;
+}
+
+.p3{
+    color:#fefefe;
+    font-family: "Arial";
+    font-weight: bold;
+}
+
+.topic{
+    font-size: 3rem;
+    font-weight: 400;
+    font-family: "Impact";
+    text-align: center;
+    padding: 10px;
+    outline: 5px dotted #DF20BF;
+}
+
+.banner{
+    color: #201924;
+    font-family: "Impact";
+    font-size: 600%;
+    opacity: 90%;
+    padding: 30px;
+    /* set stroke on title using webkit to increase readability and style */
+    -webkit-text-stroke-color: #DF20BF;
+    -webkit-text-stroke-width: 3px;
+}
+
+/* ensure the photos don't look too out of place and not too clunky with proportionate dimensions*/
+.photo{
+    display: block;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 720px;
+}
+
+.photo2{
+    display: block;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 720px;
+}
+
+/* set gifs as background for buttons in index.html */
+.bg1{
+    background:url("https://media.tenor.com/8XfhFrwNfv0AAAAC/space-pixel-art.gif");
+}
+
+.bg2{
+    background:url("https://media.tenor.com/_nicmdVprBoAAAAC/film-filmstrip.gif");
+}
+
+.bg3{
+    background:url("https://media.tenor.com/4Qx7ZhTTzM4AAAAC/pixel-snow-art.gif");
+}
